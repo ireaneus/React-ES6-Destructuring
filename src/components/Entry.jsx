@@ -6,6 +6,7 @@ function Entry(props) {
       <td>{props.model}</td>
       <td>{props.topColor}</td>
       <td>{props.topSpeed}</td>
+      <td>{props.zeroSixty}</td>
     </tr>
   );
 }

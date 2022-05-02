@@ -9,6 +9,7 @@ function createEntry(carsEntry) {
       model={carsEntry.model}
       topColor={carsEntry.coloursByPopularity[0]}
       topSpeed={carsEntry.speedStats.topSpeed}
+      zeroSixty={carsEntry.speedStats.zeroToSixty}
     />
   );
 }
@@ -18,7 +19,9 @@ function App() {
     <table>
       <tr>
         <th>Brand</th>
+        <th>Top Color</th>
         <th>Top Speed</th>
+        <th>0 - 60 Speed</th>
       </tr>
       {cars.map(createEntry)}
     </table>
